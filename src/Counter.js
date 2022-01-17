@@ -10,16 +10,16 @@ export default function Counter() {
   // v2
   useEffect(() => {
     console.log('render one time');
-  },[]);
+  }, []);
   // v3
   useEffect(() => {
     console.log('render only for dependency array');
   }, [count]);
   // v4
   useEffect(() => {
-    return function(){
+    return function () {
       console.log('unmount');
-    })
+    };
   });
 
   return (
