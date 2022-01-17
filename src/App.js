@@ -14,7 +14,7 @@ export default function App() {
       >
         switch
       </button>
-      <Counter />
+      { flag && <Counter />}
     </div>
   );
 }
